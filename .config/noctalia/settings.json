@@ -287,15 +287,15 @@
         "colorizeIcons": false,
         "deadOpacity": 0.6,
         "displayMode": "auto_hide",
-        "enabled": false,
+        "enabled": true,
         "floatingRatio": 1,
-        "inactiveIndicators": false,
+        "inactiveIndicators": true,
         "monitors": [
         ],
         "onlySameOutput": true,
         "pinnedApps": [
         ],
-        "pinnedStatic": false,
+        "pinnedStatic": true,
         "size": 1
     },
     "general": {
