@@ -24,6 +24,35 @@ window-rule {
     match title="^(Open)$"
     match title="^(xdg-desktop-portal-gtk)(.*)$"
 
+    // Chinese Localization
+    match title="^(打开)(.*)$"
+    match title="^(选择)(.*)$"
+    match title="^(保存)(.*)$"
+    match title="^(另存为)(.*)$"
+    match title="^(确认)(.*)$"
+    match title="^(错误)(.*)$"
+    match title="^(警告)(.*)$"
+    match title="^(nomacs)(.*)$"
+    match title="^(文件上传)(.*)$"
+    match title="^(下载)(.*)$"
+    match title="^(属性)(.*)$"
+    match title="^(设置)(.*)$"
+    match title="^(关于)(.*)$"
+    match title="^(搜索)(.*)$"
+    match title="^(查找)(.*)$"
+    match title="^(替换)(.*)$"
+    match title="^(字体)(.*)$"
+    match title="^(颜色)(.*)$"
+    match title="^(复制)(.*)$"
+    match title="^(移动)(.*)$"
+    match title="^(重命名)(.*)$"
+    match title="^(删除)(.*)$"
+    match title="^(新建)(.*)$"
+    match title="^(导出)(.*)$"
+    match title="^(导入)(.*)$"
+    match title="^(进度)(.*)$"
+    match title="^(首选项)(.*)$"
+
     match app-id="org.gnome.Nautilus"
     match app-id="com.system76.CosmicFiles"
     match app-id="^(org.gnome.polkit-gnome-authentication-agent-1)$"
@@ -65,7 +94,7 @@ window-rule {
 }
 
 window-rule {
-    geometry-corner-radius 5
+    geometry-corner-radius 15
     clip-to-geometry true
 }
 
