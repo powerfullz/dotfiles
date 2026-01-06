@@ -122,7 +122,8 @@
                     "id": "Tray",
                     "pinned": [
                         "Sparkle",
-                        "AyuGram Desktop"
+                        "AyuGram Desktop",
+                        "中州韵"
                     ]
                 },
                 {
@@ -487,7 +488,7 @@
     },
     "templates": {
         "alacritty": true,
-        "cava": false,
+        "cava": true,
         "code": true,
         "discord": false,
         "emacs": false,

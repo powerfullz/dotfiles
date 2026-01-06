@@ -1,6 +1,6 @@
 [general]
 import = [
-    "~/.config/alacritty/themes/themes/duskfox.toml"
+    "~/.config/alacritty/noctalia.toml"
 ]
 
 [window]
