@@ -501,7 +501,7 @@
         "helix": false,
         "hyprland": false,
         "kcolorscheme": true,
-        "kitty": false,
+        "kitty": true,
         "mango": false,
         "niri": true,
         "pywalfox": false,

@@ -29,7 +29,7 @@ animations {
 binds {
     Super+E hotkey-overlay-title="Open File Manager" { spawn-sh "nautilus --new-window"; }
     Mod+Shift+Slash { show-hotkey-overlay; }
-    Mod+Return hotkey-overlay-title="Open a Terminal: alacritty" { spawn "alacritty"; }
+    Mod+Return hotkey-overlay-title="Open a Terminal: kitty" { spawn "kitty"; }
     Super+D hotkey-overlay-title="Noctalia Shell: Run an Application" { spawn-sh "qs -c noctalia-shell ipc call launcher toggle"; }
     Super+L hotkey-overlay-title="Noctalia Shell: Lock and Suspend" { spawn-sh "qs -c noctalia-shell ipc call lockScreen lock"; }
 
