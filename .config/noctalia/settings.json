@@ -123,7 +123,8 @@
                     "pinned": [
                         "Sparkle",
                         "AyuGram Desktop",
-                        "中州韵"
+                        "中州韵",
+                        "chrome_status_icon_1"
                     ]
                 },
                 {
@@ -353,12 +354,12 @@
     },
     "nightLight": {
         "autoSchedule": true,
-        "dayTemp": "6500",
-        "enabled": false,
+        "dayTemp": "6168",
+        "enabled": true,
         "forced": false,
         "manualSunrise": "06:30",
         "manualSunset": "18:30",
-        "nightTemp": "4000"
+        "nightTemp": "3916"
     },
     "notifications": {
         "backgroundOpacity": 1,
