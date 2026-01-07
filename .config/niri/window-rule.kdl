@@ -1,4 +1,9 @@
 window-rule {
+    match app-id="zen"
+    default-column-width { proportion 1.0; }
+}
+
+window-rule {
     match title="^Picture-in-Picture$"
     match title="^(Open File)(.*)$"
     match title="^(Select a File)(.*)$"
@@ -68,6 +73,7 @@ window-rule {
     match app-id="^(nm-connection-editor)$"
     match app-id="^(waypaper)$"
     match app-id="^(Emulator)$"
+    match app-id="^(wine|wine-preloader|wine64-preloader)$"
 
     open-floating true
     tiled-state false
