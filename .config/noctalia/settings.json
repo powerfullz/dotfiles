@@ -46,7 +46,7 @@
             "center": [
                 {
                     "customFont": "",
-                    "formatHorizontal": "HH:mm ddd, MMM dd",
+                    "formatHorizontal": "HH:mm ddd, MMMd日",
                     "formatVertical": "HH mm - dd MM",
                     "id": "Clock",
                     "tooltipFormat": "HH:mm ddd, MMM dd",
