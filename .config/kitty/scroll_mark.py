@@ -16,3 +16,4 @@ def handle_result(
             w.scroll_to_mark(prev=False)
         else:
             w.scroll_to_mark()
+            
