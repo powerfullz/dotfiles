@@ -215,7 +215,7 @@
                 "id": "brightness-card"
             },
             {
-                "enabled": true,
+                "enabled": false,
                 "id": "weather-card"
             },
             {
@@ -296,6 +296,16 @@
         ],
         "onlySameOutput": true,
         "pinnedApps": [
+            "zen",
+            "com.ayugram.desktop",
+            "termius",
+            "steam",
+            "spotify",
+            "com.usebottles.bottles",
+            "code",
+            "google-chrome",
+            "kitty",
+            "bitwarden"
         ],
         "pinnedStatic": true,
         "size": 1
