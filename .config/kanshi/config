@@ -1,0 +1,10 @@
+# 只有笔记本屏幕时
+profile {
+    output eDP-1 enable mode 2560x1600@60.000 scale 1.5
+}
+
+# 连接 HDMI 时，关闭笔记本屏幕
+profile {
+    output eDP-1 disable
+    output "PNP(AOC) Q27G2S 18DQAHA034464" enable mode 2560x1440@144.001 scale 1.25
+}

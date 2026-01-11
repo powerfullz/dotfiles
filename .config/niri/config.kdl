@@ -1,4 +1,3 @@
-include "monitors.kdl"
 include "input.kdl"
 include "layout.kdl"
 include "window-rule.kdl"
