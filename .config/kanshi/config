@@ -1,10 +1,10 @@
 # 只有笔记本屏幕时
-profile {
+profile internal_screen {
     output eDP-1 enable mode 2560x1600@60.000 scale 1.5
 }
 
-# 连接 HDMI 时，关闭笔记本屏幕
-profile {
-    output eDP-1 disable
+# 外接显示器（AOC Q27G2S）
+profile home {
+    output eDP-1 enable mode 2560x1600@60.000 scale 1.5
     output "PNP(AOC) Q27G2S 18DQAHA034464" enable mode 2560x1440@144.001 scale 1.25
 }
