@@ -8,3 +8,8 @@ profile home {
     output eDP-1 enable mode 2560x1600@60.000 scale 1.5
     output "PNP(AOC) Q27G2S 18DQAHA034464" enable mode 2560x1440@144.001 scale 1.25
 }
+
+profile home_2 {
+    output eDP-1 enable mode 2560x1600@60.000 scale 1.5
+    output "Beihai Century Joint Innovation Technology Co.,Ltd P2712R 0000000000000" enable mode 2560x1440@199.999 scale 1.25 position -1706,0
+}

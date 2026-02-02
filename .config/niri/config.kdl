@@ -1,7 +1,6 @@
 include "input.kdl"
 include "layout.kdl"
 include "window-rule.kdl"
-include "noctalia.kdl"
 include "startup.kdl"
 include "keybind.kdl"
 
@@ -25,4 +24,7 @@ screenshot-path "~/图片/屏幕截图/Screenshot from %Y-%m-%d %H-%M-%S.png"
 animations {
     slowdown 1.5
 }
+
+
+include "./noctalia.kdl"
 

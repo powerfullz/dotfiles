@@ -3,7 +3,7 @@ binds {
     Mod+Shift+Slash { show-hotkey-overlay; }
     Mod+Return hotkey-overlay-title="打开终端：kitty" { spawn "kitty"; }
     Super+D hotkey-overlay-title="Noctalia Shell：运行应用程序" { spawn-sh "qs -c noctalia-shell ipc call launcher toggle"; }
-    Super+L hotkey-overlay-title="Noctalia Shell：锁定并挂起" { spawn-sh "qs -c noctalia-shell ipc call lockScreen lock"; }
+    Super+Shift+L hotkey-overlay-title="Noctalia Shell：锁定并挂起" { spawn-sh "qs -c noctalia-shell ipc call lockScreen lock"; }
     Super+T hotkey-overlay-title="任务管理器：xfce4-taskmanager" { spawn-sh "xfce4-taskmanager --standalone"; }
 
     XF86AudioRaiseVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1+ -l 1.0"; }
@@ -32,8 +32,8 @@ binds {
     Mod+Q repeat=false { close-window; }
 
     Mod+Left  { focus-column-left; }
-    Mod+Down  { focus-window-down; }
-    Mod+Up    { focus-window-up; }
+    // Mod+Down  { focus-window-down; }
+    // Mod+Up    { focus-window-up; }
     Mod+Right { focus-column-right; }
     Mod+H     { focus-column-left; }
     Mod+J     { focus-window-down; }
@@ -87,8 +87,8 @@ binds {
     // Mod+Shift+Ctrl+Left  { move-workspace-to-monitor-left; }
     // ...
 
-    Mod+Page_Down      { focus-workspace-down; }
-    Mod+Page_Up        { focus-workspace-up; }
+    Mod+Down      { focus-workspace-down; }
+    Mod+Up        { focus-workspace-up; }
     Mod+U              { focus-workspace-down; }
     Mod+I              { focus-workspace-up; }
     Mod+Ctrl+Page_Down { move-column-to-workspace-down; }
@@ -243,19 +243,7 @@ binds {
     // The allow-inhibiting=false property can be applied to other binds as well,
     // which ensures niri always processes them, even when an inhibitor is active.
     Mod+Escape allow-inhibiting=false { toggle-keyboard-shortcuts-inhibit; }
-
-    // The quit action will show a confirmation dialog to avoid accidental exits.
     Mod+Shift+E { quit; }
     Ctrl+Alt+Delete { quit; }
-
-    // Powers off the monitors. To turn them back on, do any input like
-    // moving the mouse or pressing any other key.
     Mod+Shift+P { power-off-monitors; }
-
-// Uncomment this line to ask the clients to omit their client-side decorations if possible.
-// If the client will specifically ask for CSD, the request will be honored.
-// Additionally, clients will be informed that they are tiled, removing some client-side rounded corners.
-// This option will also fix border/focus ring drawing behind some semitransparent windows.
-// After enabling or disabling this, you need to restart the apps for this to take effect.
-// prefer-no-csd
 }
