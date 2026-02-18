@@ -44,7 +44,7 @@ layout {
     }
 
     shadow {
-        on
+        // on
         // draw-behind-window true
         softness 30
         spread 5

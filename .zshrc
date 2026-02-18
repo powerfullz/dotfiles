@@ -161,3 +161,11 @@ alias ll='eza -l --header --icons'
 alias la='eza -la --header --icons'
 alias tree='eza --tree'
 
+
+# pnpm
+export PNPM_HOME="/home/powerfullz/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
