@@ -84,6 +84,13 @@ window-rule {
     default-column-width { proportion 1.0; }
 }
 
+window-rule {
+    match app-id="zen"
+    match title="页面信息 — *"
+
+    open-floating true
+}
+
 // Indicate screencasted windows with red colors.
 window-rule {
     match is-window-cast-target=true
