@@ -81,14 +81,9 @@ window-rule {
     match app-id="code"
     match app-id="Termius"
     match app-id="google-chrome"
+    match app-id="helium"
+    match app-id="Ladybird"
     default-column-width { proportion 1.0; }
-}
-
-window-rule {
-    match app-id="zen"
-    match title="页面信息 — *"
-
-    open-floating true
 }
 
 // Indicate screencasted windows with red colors.

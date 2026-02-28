@@ -163,7 +163,8 @@
                         "chrome_status_icon_1",
                         "键盘 - 英语（美国）",
                         "输入法",
-                        "WeChat"
+                        "WeChat",
+                        "tray-icon tray app main"
                     ]
                 },
                 {
@@ -277,10 +278,16 @@
                     "id": "Bluetooth"
                 },
                 {
-                    "id": "WallpaperSelector"
+                    "id": "PowerProfile"
+                },
+                {
+                    "id": "AirplaneMode"
                 }
             ],
             "right": [
+                {
+                    "id": "WallpaperSelector"
+                },
                 {
                     "id": "Notifications"
                 },
