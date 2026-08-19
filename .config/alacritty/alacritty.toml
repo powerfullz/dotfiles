@@ -1,6 +1,5 @@
 [general]
 import = [
-    "~/.config/alacritty/noctalia.toml"
 ]
 
 [window]

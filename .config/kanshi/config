@@ -10,6 +10,6 @@ profile home {
 }
 
 profile home_2 {
-    output eDP-1 enable mode 2560x1600@60.000 scale 1.5
-    output "Beihai Century Joint Innovation Technology Co.,Ltd P2712R 0000000000000" enable mode 2560x1440@199.999 scale 1.25 position -1706,0
+    output eDP-1 disable
+    output "Hisense Electric Co., Ltd. 27G7K-Ultra 0000000000001" enable mode 3840x2160@160.000 scale 1.5
 }

@@ -3,6 +3,7 @@ include "layout.kdl"
 include "window-rule.kdl"
 include "startup.kdl"
 include "keybind.kdl"
+include "output.kdl"
 
 cursor {
     xcursor-theme "Bibata-Modern-Classic"

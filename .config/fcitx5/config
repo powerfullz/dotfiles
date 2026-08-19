@@ -5,6 +5,8 @@ EnumerateWithTriggerKeys=True
 ActivateKeys=
 # 取消激活输入法
 DeactivateKeys=
+# 临时切换输入法
+AltTriggerKeys=
 # 向前切换输入法
 EnumerateForwardKeys=
 # 向后切换输入法
@@ -16,9 +18,6 @@ ModifierOnlyKeyTimeout=200
 
 [Hotkey/TriggerKeys]
 0=Super+space
-
-[Hotkey/AltTriggerKeys]
-0=Shift+Shift_L
 
 [Hotkey/EnumerateGroupForwardKeys]
 0=Control+space

@@ -77,7 +77,6 @@ window-rule {
 
 // Set specific apps to use full column width by default.
 window-rule {
-    match app-id="zen"
     match app-id="code"
     match app-id="Termius"
     match app-id="google-chrome"
@@ -106,8 +105,16 @@ window-rule {
 }
 
 window-rule {
-    geometry-corner-radius 15
+    geometry-corner-radius 20
     clip-to-geometry true
+}
+
+// Floating Noctalia settings window.
+window-rule {
+    match app-id="dev.noctalia.Noctalia.Settings"
+    open-floating true
+    default-column-width { fixed 1080; }
+    default-window-height { fixed 920; }
 }
 
 layer-rule {

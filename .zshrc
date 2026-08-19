@@ -169,3 +169,9 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
+
+# oh-my-opencode / OpenCode providers
+export YUNWU_API_KEY="sk-3QDQkYr4E9H3W2zSQ4AvrIBSxV1X40ZyDol7gBSE07erU9I9"
+export GOOGLE_APPLICATION_CREDENTIALS="/home/powerfullz/下载/platinum-device-441708-f1-8c33496f9305.json"
+export GOOGLE_CLOUD_PROJECT="platinum-device-441708-f1"
+export VERTEX_LOCATION="global"

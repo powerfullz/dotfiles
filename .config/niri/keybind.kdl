@@ -2,8 +2,8 @@ binds {
     Super+E hotkey-overlay-title="打开文件管理器" { spawn-sh "thunar --window"; }
     Mod+Shift+Slash { show-hotkey-overlay; }
     Mod+Return hotkey-overlay-title="打开终端：kitty" { spawn "kitty"; }
-    Super+D hotkey-overlay-title="Noctalia Shell：运行应用程序" { spawn-sh "qs -c noctalia-shell ipc call launcher toggle"; }
-    Super+Shift+L hotkey-overlay-title="Noctalia Shell：锁定并挂起" { spawn-sh "qs -c noctalia-shell ipc call lockScreen lock"; }
+    Super+D hotkey-overlay-title="Noctalia：运行应用程序" { spawn-sh "noctalia msg panel-toggle launcher"; }
+    Super+Shift+L hotkey-overlay-title="Noctalia：锁定并挂起" { spawn-sh "noctalia msg session lock"; }
     Super+T hotkey-overlay-title="任务管理器：xfce4-taskmanager" { spawn-sh "xfce4-taskmanager --standalone"; }
 
     XF86AudioRaiseVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1+ -l 1.0"; }
@@ -233,6 +233,9 @@ binds {
     Ctrl+Print { screenshot; }
     Print { screenshot-screen; }
     Alt+Print { screenshot-window; }
+    Mod+S { screenshot-screen; }
+    Mod+Shift+S { screenshot; }
+    Mod+Alt+S { screenshot-window; }
 
     // Applications such as remote-desktop clients and software KVM switches may
     // request that niri stops processing the keyboard shortcuts defined here

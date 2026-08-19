@@ -1,0 +1,4 @@
+output "Hisense Electric Co., Ltd. 27G7K-Ultra 0000000000001" {
+    mode "3840x2160@160.000"
+    scale 1.5
+}
