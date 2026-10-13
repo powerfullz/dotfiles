@@ -52,6 +52,7 @@ window-rule {
     match title="^(导入)(.*)$"
     match title="^(进度)(.*)$"
     match title="^(首选项)(.*)$"
+    match title="^(媒体查看器)(.*)$"
 
     match app-id="^(org.gnome.polkit-gnome-authentication-agent-1)$"
     match app-id="^(qt5ct)$"
