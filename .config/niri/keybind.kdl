@@ -1,5 +1,5 @@
 binds {
-    Super+E hotkey-overlay-title="打开文件管理器" { spawn-sh "thunar --window"; }
+    Super+E hotkey-overlay-title="打开文件管理器" { spawn-sh "nautilus -w"; }
     Mod+Shift+Slash { show-hotkey-overlay; }
     Mod+Return hotkey-overlay-title="打开终端：kitty" { spawn "kitty"; }
     Mod+D hotkey-overlay-title="Noctalia：运行应用程序" { spawn-sh "noctalia msg panel-toggle launcher"; }
