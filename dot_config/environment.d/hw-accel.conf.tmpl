@@ -1,4 +1,4 @@
-{{- if eq .gpuVendor "nvidia" -}}
+{{- if eq (index . "gpuVendor" | default "") "nvidia" -}}
 VDPAU_DRIVER=nvidia
 {{- else -}}
 VDPAU_DRIVER=va_gl

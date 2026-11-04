@@ -1,9 +1,9 @@
 # Machine-local values. This file is rendered once by `chezmoi init` into
 # ~/.config/chezmoi/chezmoi.toml. Do not commit the rendered file.
 [data]
-    profile        = {{ promptString "Profile (laptop/desktop)" "laptop" | quote }}
+    profile        = {{ promptString "Profile (laptop/desktop/server)" "laptop" | quote }}
     primaryOutput  = {{ promptString "Primary output (eDP-1/DP-1/...)" "eDP-1" | quote }}
-    gpuVendor      = {{ promptString "GPU vendor (intel/amd/nvidia)" "amd" | quote }}
+    gpuVendor      = {{ promptString "GPU vendor (intel/amd/nvidia/none)" "amd" | quote }}
     hasTouchpad    = {{ promptBool "Has touchpad?" true }}
     hasSparkle     = {{ promptBool "Use Sparkle?" false }}
     keyring        = {{ promptString "Password store (gnome-libsecret/kwallet)" "gnome-libsecret" | quote }}

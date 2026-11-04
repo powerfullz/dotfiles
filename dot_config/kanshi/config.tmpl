@@ -1,6 +1,8 @@
 # Machine-specific monitor profiles. Kanshi owns output configuration;
 # there is intentionally no output.kdl on the niri side anymore.
-{{ if eq .profile "laptop" }}
+{{ if eq .profile "server" }}
+# Headless server: no display outputs to manage.
+{{ else if eq .profile "laptop" }}
 # 只有笔记本屏幕时
 profile internal_screen {
     output eDP-1 enable mode 2560x1600@60.000 scale 1.5

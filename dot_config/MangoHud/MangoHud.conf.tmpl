@@ -91,7 +91,7 @@ gpu_power_limit
 ## GPU fan in rpm on AMD, FAN in percent on NVIDIA
 gpu_fan
 ## gpu_voltage only works on AMD GPUs
-{{ if eq .gpuVendor "amd" }}gpu_voltage{{ end }}
+{{ if eq (index . "gpuVendor" | default "") "amd" }}gpu_voltage{{ end }}
 ## Select list of GPUs to display
 # gpu_list=0,1
 # gpu_efficiency
