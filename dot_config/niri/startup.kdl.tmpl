@@ -1,0 +1,10 @@
+spawn-at-startup "noctalia"
+// spawn-at-startup "mako"
+// spawn-sh-at-startup "waypaper --restore"
+spawn-at-startup "{{ .polkitAgent }}"
+spawn-sh-at-startup "swayidle -w timeout 601 'niri msg action power-off-monitors' timeout 600 'noctalia msg session lock' before-sleep 'noctalia msg session lock'"
+spawn-at-startup "kanshi"
+spawn-at-startup "fcitx5"
+{{- if .hasSparkle }}
+spawn-at-startup "/opt/sparkle/sparkle"
+{{- end }}

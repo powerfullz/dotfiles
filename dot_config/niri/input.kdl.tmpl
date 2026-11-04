@@ -3,6 +3,7 @@ input {
         numlock
     }
 
+    {{- if .hasTouchpad }}
     touchpad {
         // off
         tap
@@ -17,6 +18,7 @@ input {
 	      scroll-factor 0.75
         // disabled-on-external-mouse
     }
+    {{- end }}
 
     mouse {
         // off

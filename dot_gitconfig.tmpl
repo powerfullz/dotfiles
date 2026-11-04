@@ -1,0 +1,19 @@
+[user]
+	name = powerfullz
+	email = {{ .gitEmail }}
+[credential "https://github.com"]
+	helper =
+	helper = !{{ .ghPath }} auth git-credential
+	username = powerfullz
+[credential "https://gist.github.com"]
+	helper =
+	helper = !{{ .ghPath }} auth git-credential
+[init]
+	defaultBranch = main
+[credential]
+	credentialstore = secretservice
+	credentialstor = --delete
+[credential "https://dev.azure.com"]
+	useHttpPath = true
+[credential "https://git.l3zc.com"]
+	provider = generic

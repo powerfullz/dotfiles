@@ -1,0 +1,14 @@
+# Machine-local / app-generated files.
+# These are created and rewritten by the applications themselves; managing them
+# from chezmoi only creates diff churn on every theme change.
+.config/gtk-3.0/noctalia.css
+.config/gtk-3.0/noctalia-extensions.css
+.config/gtk-4.0/noctalia.css
+.config/gtk-4.0/noctalia-extensions.css
+.config/fuzzel/themes/noctalia
+.config/kitty/current-theme.conf
+.config/kitty/themes/noctalia.conf
+.config/fcitx5/conf/cached_layouts
+
+# SMB bookmarks are specific to one LAN; keep them local to each machine.
+.config/gtk-4.0/servers

@@ -1,4 +1,4 @@
-# Start configuration added by Zim Framework install {{{
+# Start configuration added by Zim Framework install (fold)
 #
 # User configuration sourced by interactive shells
 #
@@ -103,7 +103,7 @@ if [[ ! ${ZIM_HOME}/init.zsh -nt ${ZIM_CONFIG_FILE:-${ZDOTDIR:-${HOME}}/.zimrc} 
 fi
 # Initialize modules.
 source ${ZIM_HOME}/init.zsh
-# }}} End configuration added by Zim Framework install
+# End configuration added by Zim Framework install (fold)
 
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
@@ -163,7 +163,7 @@ alias tree='eza --tree'
 
 
 # pnpm
-export PNPM_HOME="/home/powerfullz/.local/share/pnpm"
+export PNPM_HOME="{{ .chezmoi.homeDir }}/.local/share/pnpm"
 case ":$PATH:" in
   *":$PNPM_HOME:"*) ;;
   *) export PATH="$PNPM_HOME:$PATH" ;;
@@ -171,7 +171,7 @@ esac
 # pnpm end
 
 # fnm
-FNM_PATH="/home/debian/.local/share/fnm"
+FNM_PATH="{{ .chezmoi.homeDir }}/.local/share/fnm"
 if [ -d "$FNM_PATH" ]; then
   export PATH="$FNM_PATH:$PATH"
   eval "$(fnm env --shell zsh)"

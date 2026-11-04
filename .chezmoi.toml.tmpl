@@ -1,0 +1,17 @@
+# Machine-local values. This file is rendered once by `chezmoi init` into
+# ~/.config/chezmoi/chezmoi.toml. Do not commit the rendered file.
+[data]
+    profile        = {{ promptString "Profile (laptop/desktop)" "laptop" | quote }}
+    primaryOutput  = {{ promptString "Primary output (eDP-1/DP-1/...)" "eDP-1" | quote }}
+    gpuVendor      = {{ promptString "GPU vendor (intel/amd/nvidia)" "amd" | quote }}
+    hasTouchpad    = {{ promptBool "Has touchpad?" true }}
+    hasSparkle     = {{ promptBool "Use Sparkle?" false }}
+    keyring        = {{ promptString "Password store (gnome-libsecret/kwallet)" "gnome-libsecret" | quote }}
+    locale         = {{ promptString "Locale" "zh_CN.UTF-8" | quote }}
+    gitEmail       = {{ promptString "Git email" "wleizc@hotmail.com" | quote }}
+    ghPath         = {{ promptString "gh binary path" "/usr/bin/gh" | quote }}
+    gtkFont        = {{ promptString "GTK font" "思源黑体 CN 12" | quote }}
+    themeDir       = {{ promptString "GTK theme directory" "/usr/share/themes/adw-gtk3" | quote }}
+    polkitAgent    = {{ promptString "Polkit agent path" "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1" | quote }}
+    pamFprintdPath = {{ promptString "pam_fprintd path" "pam_fprintd.so" | quote }}
+    screenshotDir  = {{ promptString "Screenshot dir under home" "图片/屏幕截图" | quote }}

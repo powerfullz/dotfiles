@@ -3,7 +3,6 @@ include "layout.kdl"
 include "window-rule.kdl"
 include "startup.kdl"
 include "keybind.kdl"
-include "output.kdl"
 
 cursor {
     xcursor-theme "Bibata-Modern-Classic"
@@ -20,7 +19,7 @@ hotkey-overlay {
     skip-at-startup
 }
 
-screenshot-path "~/图片/屏幕截图/Screenshot from %Y-%m-%d %H-%M-%S.png"
+screenshot-path "~/{{ .screenshotDir }}/Screenshot from %Y-%m-%d %H-%M-%S.png"
 
 animations {
     slowdown 1.5
