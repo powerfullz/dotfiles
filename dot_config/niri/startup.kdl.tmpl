@@ -1,7 +1,9 @@
 spawn-at-startup "noctalia"
 // spawn-at-startup "mako"
 // spawn-sh-at-startup "waypaper --restore"
-spawn-at-startup "{{ .polkitAgent }}"
+// polkit 认证由 Noctalia 内置 agent 处理（shell.polkit_agent = true）
+// 不要再启动 polkit-gnome：它会抢占 session agent，导致 Noctalia 注册失败
+// spawn-at-startup "{{ .polkitAgent }}"
 spawn-sh-at-startup "swayidle -w timeout 601 'niri msg action power-off-monitors' timeout 600 'noctalia msg session lock' before-sleep 'noctalia msg session lock'"
 spawn-at-startup "kanshi"
 spawn-at-startup "fcitx5"
