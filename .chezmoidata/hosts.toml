@@ -1,0 +1,30 @@
+# 每台机器的事实与专属文件，全部提交进仓库。
+# 加一台机器 = 加一个 [hosts.<名字>] 表；本机只会读到自己那张表。
+#
+# files = 只属于这台机器的目标文件（相对 home 的路径）。
+#   这些文件照常提交在仓库里，但 .chezmoiignore 会在其它机器上忽略它们，
+#   所以新机器不会因为看到别人的配置而被触发。
+
+[hosts.laptop]
+primaryOutput  = "eDP-1"
+gpuVendor      = "amd"
+touchpad       = true
+sparkle        = true
+pamFprintdPath = "pam_fprintd.so"
+files          = []
+
+[hosts.desktop]
+primaryOutput  = "DP-1"
+gpuVendor      = "nvidia"
+touchpad       = false
+sparkle        = false
+pamFprintdPath = "pam_fprintd.so"
+files          = []
+
+[hosts.server]
+primaryOutput  = ""
+gpuVendor      = "none"
+touchpad       = false
+sparkle        = false
+pamFprintdPath = "pam_fprintd.so"
+files          = []

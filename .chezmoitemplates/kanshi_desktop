@@ -1,0 +1,13 @@
+# Desktop: no internal panel.
+profile aoc {
+    output "PNP(AOC) Q27G2S 18DQAHA034464" enable mode 2560x1440@144.001 scale 1.25
+}
+
+profile hisense {
+    output "Hisense Electric Co., Ltd. 27G7K-Ultra 0000000000001" enable mode 3840x2160@160.000 scale 1.5
+}
+
+profile dual {
+    output "PNP(AOC) Q27G2S 18DQAHA034464" enable mode 2560x1440@144.001 scale 1.25
+    output "Hisense Electric Co., Ltd. 27G7K-Ultra 0000000000001" enable mode 3840x2160@160.000 scale 1.5
+}

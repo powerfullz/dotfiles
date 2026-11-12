@@ -1,0 +1,22 @@
+# 只有笔记本屏幕时
+profile internal_screen {
+    output eDP-1 enable mode 2560x1600@60.000 scale 1.5
+}
+
+# 外接显示器（AOC Q27G2S）
+profile home {
+    output eDP-1 enable mode 2560x1600@60.000 scale 1.5
+    output "PNP(AOC) Q27G2S 18DQAHA034464" enable mode 2560x1440@144.001 scale 1.25
+}
+
+profile home_2 {
+    output eDP-1 disable
+    output "Hisense Electric Co., Ltd. 27G7K-Ultra 0000000000001" enable mode 3840x2160@160.000 scale 1.5
+}
+
+# 同时外接两台显示器
+profile home_dual {
+    output eDP-1 disable
+    output "PNP(AOC) Q27G2S 18DQAHA034464" enable mode 2560x1440@144.001 scale 1.25
+    output "Hisense Electric Co., Ltd. 27G7K-Ultra 0000000000001" enable mode 3840x2160@160.000 scale 1.5
+}

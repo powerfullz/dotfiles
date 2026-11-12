@@ -1,6 +1,7 @@
-# Machine-local / app-generated files.
-# These are created and rewritten by the applications themselves; managing them
-# from chezmoi only creates diff churn on every theme change.
+# ════════════════════════════════════════════════════════════════════
+# 1. 自动生成 / 可抛弃的文件
+#    应用会自己重写它们，交给 chezmoi 只会每次主题变化都产生 diff。
+# ════════════════════════════════════════════════════════════════════
 .config/gtk-3.0/noctalia.css
 .config/gtk-3.0/noctalia-extensions.css
 .config/gtk-4.0/noctalia.css
@@ -10,5 +11,18 @@
 .config/kitty/themes/noctalia.conf
 .config/fcitx5/conf/cached_layouts
 
-# SMB bookmarks are specific to one LAN; keep them local to each machine.
+# SMB 书签只属于某个局域网，每台机器自己留一份。
 .config/gtk-4.0/servers
+
+# ════════════════════════════════════════════════════════════════════
+# 2. 其它机器的专属文件
+#    这些文件在仓库里是提交的（作为积累），但只会在它所属的机器上安装。
+#    在 .chezmoidata/hosts.toml 里给某台机器加 files 条目即可，无需改这里。
+# ════════════════════════════════════════════════════════════════════
+{{- range $name, $cfg := .hosts }}
+{{- if ne $name $.host }}
+{{- range ($cfg.files | default list) }}
+{{ . }}
+{{- end }}
+{{- end }}
+{{- end }}

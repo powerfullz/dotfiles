@@ -1,4 +1,5 @@
-{{- if eq (index . "gpuVendor" | default "") "nvidia" -}}
+{{- $h := index .hosts .host -}}
+{{- if eq $h.gpuVendor "nvidia" -}}
 VDPAU_DRIVER=nvidia
 {{- else -}}
 VDPAU_DRIVER=va_gl

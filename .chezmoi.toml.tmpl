@@ -1,17 +1,7 @@
-# Machine-local values. This file is rendered once by `chezmoi init` into
-# ~/.config/chezmoi/chezmoi.toml. Do not commit the rendered file.
+{{- $host := promptStringOnce . "host" "Host name (laptop/desktop/server)" -}}
+# 本机身份。这个文件只回答一个问题：我是哪台机器。
+# 具体值都在 .chezmoidata/ 里，随仓库走。
+# promptStringOnce：已配置过就不再追问，重跑 chezmoi init 也不会覆盖你的选择。
+
 [data]
-    profile        = {{ promptString "Profile (laptop/desktop/server)" "laptop" | quote }}
-    primaryOutput  = {{ promptString "Primary output (eDP-1/DP-1/...)" "eDP-1" | quote }}
-    gpuVendor      = {{ promptString "GPU vendor (intel/amd/nvidia/none)" "amd" | quote }}
-    hasTouchpad    = {{ promptBool "Has touchpad?" true }}
-    hasSparkle     = {{ promptBool "Use Sparkle?" false }}
-    keyring        = {{ promptString "Password store (gnome-libsecret/kwallet)" "gnome-libsecret" | quote }}
-    locale         = {{ promptString "Locale" "zh_CN.UTF-8" | quote }}
-    gitEmail       = {{ promptString "Git email" "wleizc@hotmail.com" | quote }}
-    ghPath         = {{ promptString "gh binary path" "/usr/bin/gh" | quote }}
-    gtkFont        = {{ promptString "GTK font" "思源黑体 CN 12" | quote }}
-    themeDir       = {{ promptString "GTK theme directory" "/usr/share/themes/adw-gtk3" | quote }}
-    polkitAgent    = {{ promptString "Polkit agent path" "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1" | quote }}
-    pamFprintdPath = {{ promptString "pam_fprintd path" "pam_fprintd.so" | quote }}
-    screenshotDir  = {{ promptString "Screenshot dir under home" "图片/屏幕截图" | quote }}
+    host = {{ $host | quote }}

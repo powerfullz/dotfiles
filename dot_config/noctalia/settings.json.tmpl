@@ -326,7 +326,7 @@
         "gridSnapScale": false,
         "monitorWidgets": [
             {
-                "name": "{{ .primaryOutput }}",
+                "name": "{{ (index .hosts .host).primaryOutput }}",
                 "widgets": [
                     {
                         "clockStyle": "digital",

@@ -1,9 +1,10 @@
+{{- $h := index .hosts .host -}}
 input {
     keyboard {
         numlock
     }
 
-    {{- if .hasTouchpad }}
+    {{- if $h.touchpad }}
     touchpad {
         // off
         tap

@@ -1,0 +1,9 @@
+# 所有机器共享的用户偏好（与硬件无关）。
+# 改这里 = 所有机器生效。机器事实请放 hosts.toml。
+keyring       = "gnome-libsecret"
+locale        = "zh_CN.UTF-8"
+gitEmail      = "wleizc@hotmail.com"
+ghPath        = "/usr/bin/gh"
+gtkFont       = "思源黑体 CN 12"
+themeDir      = "/usr/share/themes/adw-gtk3"
+screenshotDir = "图片/屏幕截图"

@@ -1,14 +1,15 @@
+{{- $h := index .hosts .host -}}
 spawn-at-startup "noctalia"
 // spawn-at-startup "mako"
 // spawn-sh-at-startup "waypaper --restore"
 // polkit 认证由 Noctalia 内置 agent 处理（shell.polkit_agent = true）
 // 不要再启动 polkit-gnome：它会抢占 session agent，导致 Noctalia 注册失败
-// spawn-at-startup "{{ .polkitAgent }}"
+// spawn-at-startup "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
 spawn-sh-at-startup "swayidle -w timeout 601 'niri msg action power-off-monitors' timeout 600 'noctalia msg session lock' before-sleep 'noctalia msg session lock'"
 spawn-at-startup "kanshi"
 spawn-at-startup "fcitx5"
 spawn-at-startup "Clash Nyanpasu"
-{{- if .hasSparkle }}
+{{- if $h.sparkle }}
 spawn-at-startup "/opt/sparkle/sparkle"
 {{- end }}
 
