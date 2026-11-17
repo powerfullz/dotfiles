@@ -21,6 +21,16 @@
       "effect": "deny"
     },
     {
+      "action": "skill",
+      "resource": "cherry-*",
+      "effect": "deny"
+    },
+    {
+      "action": "skill",
+      "resource": "code-mate-opencode",
+      "effect": "deny"
+    },
+    {
       "action": "read",
       "resource": "~/.local/share/opencode/mcp-auth.json",
       "effect": "deny"
