@@ -28,3 +28,14 @@ touchpad       = false
 sparkle        = false
 pamFprintdPath = "pam_fprintd.so"
 files          = []
+
+# Windows 机器：.chezmoi.toml.tmpl 在这里自动把 host 设为 windows。
+# 占位是为了万一有模板用 index .hosts .host 也不会取到空值（相关模板
+# 正常情况下已被 .chezmoiignore 排除）。
+[hosts.windows]
+primaryOutput  = ""
+gpuVendor      = "none"
+touchpad       = false
+sparkle        = false
+pamFprintdPath = ""
+files          = []

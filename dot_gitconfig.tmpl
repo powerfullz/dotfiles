@@ -1,18 +1,22 @@
+{{- $ghPath := .ghPath -}}
+{{- if eq .chezmoi.os "windows" }}{{ $ghPath = "gh" }}{{ end -}}
 [user]
 	name = powerfullz
 	email = {{ .gitEmail }}
 [credential "https://github.com"]
 	helper =
-	helper = !{{ .ghPath }} auth git-credential
+	helper = !{{ $ghPath }} auth git-credential
 	username = powerfullz
 [credential "https://gist.github.com"]
 	helper =
-	helper = !{{ .ghPath }} auth git-credential
+	helper = !{{ $ghPath }} auth git-credential
 [init]
 	defaultBranch = main
+{{- if ne .chezmoi.os "windows" }}
 [credential]
 	credentialstore = secretservice
 	credentialstor = --delete
+{{- end }}
 [credential "https://dev.azure.com"]
 	useHttpPath = true
 [credential "https://git.l3zc.com"]

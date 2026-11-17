@@ -15,7 +15,52 @@
 .config/gtk-4.0/servers
 
 # ════════════════════════════════════════════════════════════════════
-# 2. 其它机器的专属文件
+# 2. 按操作系统排除（自动生效，判定依据是 chezmoi 内置的 .chezmoi.os）
+#    Windows 上用不着的 Linux 桌面 / 系统配置，一律不应用。
+#    目录要写两行：`dir/` 忽略目录本身，`dir/**` 忽略它的内容。
+#    跨平台的部分（git / nvim / opencode / starship / alacritty /
+#    fastfetch / .face）不列在这里，照常应用。
+#    想增减排除项，只改这个块即可。
+# ════════════════════════════════════════════════════════════════════
+{{- if eq .chezmoi.os "windows" }}
+.config/environment.d/
+.config/environment.d/**
+.config/fcitx5/
+.config/fcitx5/**
+.config/fontconfig/
+.config/fontconfig/**
+.config/fuzzel/
+.config/fuzzel/**
+.config/gtk-3.0/
+.config/gtk-3.0/**
+.config/gtk-4.0/
+.config/gtk-4.0/**
+.config/kanshi/
+.config/kanshi/**
+.config/kitty/
+.config/kitty/**
+.config/mako/
+.config/mako/**
+.config/MangoHud/
+.config/MangoHud/**
+.config/niri/
+.config/niri/**
+.config/noctalia/
+.config/noctalia/**
+.config/swaylock/
+.config/swaylock/**
+.config/waybar/
+.config/waybar/**
+.config/chrome-flags.conf
+.config/code-flags.conf
+.config/electron-flags.conf
+.config/locale.conf
+.zshrc
+.zimrc
+{{- end }}
+
+# ════════════════════════════════════════════════════════════════════
+# 3. 其它机器的专属文件
 #    这些文件在仓库里是提交的（作为积累），但只会在它所属的机器上安装。
 #    在 .chezmoidata/hosts.toml 里给某台机器加 files 条目即可，无需改这里。
 # ════════════════════════════════════════════════════════════════════
