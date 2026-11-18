@@ -1,0 +1,12 @@
+// 全局 markdownlint 配置（nvim-lint / conform / CLI 共用）
+// 主要针对中文文档：中文没有空格断行，长行是常态
+{
+  // 行宽限制：中文长行几乎必然超 80 列，关掉
+  "MD013": false,
+
+  // 允许内联 HTML：<br>、<img>、<details> 等在文档里很常用
+  "MD033": false,
+
+  // 允许用加粗/斜体当小标题
+  "MD036": false
+}
