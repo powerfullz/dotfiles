@@ -3,6 +3,14 @@
   "plugins": [],
   "lsp": true,
   "formatter": true,
+  "providers": {
+    "google": {
+      "settings": {
+        "baseURL": "https://uuapi.net/v1beta",
+        "apiKey": "{env:UUAPI_API_KEY}"
+      }
+    }
+  },
   "compaction": {
     "auto": true,
     "keep": {
@@ -45,6 +53,12 @@
       "gh_grep": {
         "type": "remote",
         "url": "https://mcp.grep.app"
+      },
+      "cloudflare": {
+        "type": "remote",
+        "url": "https://mcp.cloudflare.com/mcp",
+        "enabled": true,
+        "oauth": {}
       },
       "chrome-devtools": {
         "type": "local",
