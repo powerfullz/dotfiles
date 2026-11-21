@@ -19,7 +19,6 @@
     "buffer": "15%"
   },
   "experimental": {
-    "background_compaction": true,
     "todo": true
   },
   "permissions": [
@@ -57,7 +56,6 @@
       "cloudflare": {
         "type": "remote",
         "url": "https://mcp.cloudflare.com/mcp",
-        "enabled": true,
         "oauth": {}
       },
       "chrome-devtools": {
