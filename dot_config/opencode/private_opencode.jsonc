@@ -6,7 +6,7 @@
   "providers": {
     "google": {
       "settings": {
-        "baseURL": "https://uuapi.net/v1beta",
+        "baseURL": "https://uuapi.net",
         "apiKey": "{env:UUAPI_API_KEY}"
       }
     },
