@@ -9,6 +9,137 @@
         "baseURL": "https://uuapi.net/v1beta",
         "apiKey": "{env:UUAPI_API_KEY}"
       }
+    },
+    "sss": {
+      "name": "sss",
+      "canonical": "openai",
+      "settings": {
+        "baseURL": "https://node-hk.sssaiapi.com/api/v1",
+        "apiKey": "{env:SSS_API_KEY}"
+      },
+      "models": {
+        "gpt-6.2-astra": {
+          "name": "GPT-6.2 Astra",
+          "settings": {
+            "store": false,
+            "reasoningEffort": "high",
+            "textVerbosity": "medium",
+            "reasoningSummary": "auto",
+            "include": [
+              "reasoning.encrypted_content"
+            ]
+          }
+        },
+        "gpt-6.2-sol": {
+          "name": "GPT-6.2 Sol",
+          "settings": {
+            "store": false,
+            "reasoningEffort": "high",
+            "textVerbosity": "medium",
+            "reasoningSummary": "auto",
+            "include": [
+              "reasoning.encrypted_content"
+            ]
+          }
+        },
+        "gpt-6.1-sol": {
+          "name": "GPT-6.1 Sol",
+          "settings": {
+            "store": false,
+            "reasoningEffort": "high",
+            "textVerbosity": "medium",
+            "reasoningSummary": "auto",
+            "include": [
+              "reasoning.encrypted_content"
+            ]
+          }
+        },
+        "gpt-6-sol": {
+          "name": "GPT-6 Sol",
+          "settings": {
+            "store": false,
+            "reasoningEffort": "high",
+            "textVerbosity": "medium",
+            "reasoningSummary": "auto",
+            "include": [
+              "reasoning.encrypted_content"
+            ]
+          }
+        },
+        "gpt-6-astra": {
+          "name": "GPT-6 Astra",
+          "settings": {
+            "store": false,
+            "reasoningEffort": "high",
+            "textVerbosity": "medium",
+            "reasoningSummary": "auto",
+            "include": [
+              "reasoning.encrypted_content"
+            ]
+          }
+        },
+        "gpt-5.6-sol": {
+          "name": "GPT-5.6 Sol",
+          "settings": {
+            "store": false,
+            "reasoningEffort": "high",
+            "textVerbosity": "medium",
+            "reasoningSummary": "auto",
+            "include": [
+              "reasoning.encrypted_content"
+            ]
+          }
+        }
+      }
+    },
+    "sss-anthropic": {
+      "name": "sss-anthropic",
+      "canonical": "anthropic",
+      "settings": {
+        "baseURL": "https://node-hk.sssaiapi.com/api/v1",
+        "apiKey": "{env:SSS_API_KEY}"
+      },
+      "models": {
+        "claude-opus-4-8": {
+          "name": "Claude Opus 4.8"
+        },
+        "claude-opus-4-7": {
+          "name": "Claude Opus 4.7"
+        },
+        "claude-opus-4-6": {
+          "name": "Claude Opus 4.6"
+        },
+        "claude-opus-5": {
+          "name": "Claude Opus 5"
+        },
+        "claude-opus-5-5": {
+          "name": "Claude Opus 5.5"
+        },
+        "claude-sonnet-4-6": {
+          "name": "Claude Sonnet 4.6"
+        },
+        "claude-sonnet-5": {
+          "name": "Claude Sonnet 5"
+        },
+        "claude-sonnet-5-5": {
+          "name": "Claude Sonnet 5.5"
+        },
+        "claude-haiku-4-5-20251001": {
+          "name": "Claude Haiku 4.5"
+        },
+        "claude-haiku-5-5": {
+          "name": "Claude Haiku 5.5"
+        },
+        "claude-fable-5": {
+          "name": "Claude Fable 5"
+        },
+        "claude-fable-5-1": {
+          "name": "Claude Fable 5.1"
+        },
+        "claude-fable-5-2": {
+          "name": "Claude Fable 5.2"
+        }
+      }
     }
   },
   "compaction": {
@@ -19,7 +150,8 @@
     "buffer": "15%"
   },
   "experimental": {
-    "todo": true
+    "todo": true,
+    "subagent_depth": 2
   },
   "permissions": [
     {
